@@ -32,63 +32,15 @@
             flex-direction: column;
         }
         
-        /* Header */
+        /* Header modificado - apenas a logo */
         header {
-            text-align: center;
-            padding: 40px 20px;
-            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5));
+            height: 200px;
+            padding: 0;
+            background: url('https://i.ibb.co/0jHPY4Z2/OC.png') center/contain no-repeat;
             border-bottom: 3px solid var(--cor-primaria);
             position: relative;
             overflow: hidden;
-            height: 200px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        header::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url('https://i.ibb.co/0jHPY4Z2/OC.png') center/cover no-repeat;
-            z-index: -1;
-            opacity: 0.7;
-        }
-        
-        header::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.8) 100%);
-            z-index: -1;
-        }
-        
-        h1 {
-            margin: 0;
-            font-size: clamp(2.5rem, 6vw, 4rem);
-            font-weight: 800;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            color: var(--cor-primaria);
-            text-shadow: 0 0 15px rgba(230, 57, 70, 0.9);
-            z-index: 1;
-        }
-        
-        .slogan {
-            margin-top: 10px;
-            font-size: clamp(1rem, 2vw, 1.3rem);
-            font-weight: 400;
-            letter-spacing: 1px;
-            color: var(--cor-destaque);
-            text-shadow: 0 2px 5px rgba(0,0,0,0.5);
-            z-index: 1;
+            background-color: rgba(0, 0, 0, 0.7);
         }
         
         .container {
@@ -105,7 +57,7 @@
             margin-bottom: 30px;
         }
         
-        /* Botões corrigidos */
+        /* Botões */
         .anime-button {
             display: flex;
             align-items: center;
@@ -156,14 +108,14 @@
             transform: translateY(2px);
         }
         
-        /* CORREÇÃO PRINCIPAL: Imagens de fundo */
+        /* Imagens de fundo dos botões */
         .anime-button {
             background-size: cover;
             background-position: right center;
             background-repeat: no-repeat;
         }
         
-        /* Classes específicas para cada anime - CORRIGIDAS */
+        /* Classes específicas para cada anime */
         .naruto { background-image: url('https://i.ibb.co/zVp9pbqR/naruto.jpg') !important; }
         .dragon-ball { background-image: url('https://i.ibb.co/pvwYVMqT/d.jpg') !important; }
         .one-piece { background-image: url('https://i.ibb.co/hJpTMCG5/o.jpg') !important; }
@@ -234,20 +186,13 @@
             
             header {
                 height: 150px;
-                padding: 20px 10px;
-            }
-            
-            h1 {
-                font-size: 2.2rem;
             }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>OTAKU CITY</h1>
-        <p class="slogan">Sua cidade dos wallpapers anime</p>
-    </header>
+    <!-- Header simplificado - apenas a logo -->
+    <header role="banner" aria-label="Logo Otaku City"></header>
     
     <div class="container">
         <div class="buttons-grid">
