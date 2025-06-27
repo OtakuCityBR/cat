@@ -45,23 +45,26 @@
         
         .container {
             width: 100%;
+            max-width: 100%;
             margin: 20px auto;
             padding: 15px;
             flex: 1;
         }
         
         .buttons-grid {
-            display: grid;
-            grid-template-columns: 1fr;
+            display: flex;
+            flex-direction: column;
             gap: 12px;
             margin-bottom: 20px;
+            align-items: center; /* Centraliza os botões */
         }
         
         /* Botões - versão mobile primeiro */
         .anime-button {
             display: flex;
             align-items: center;
-            width: 100%;
+            width: 90%; /* Largura reduzida para 90% da tela */
+            max-width: 400px; /* Largura máxima */
             height: 70px;
             padding: 0 20px;
             background-color: rgba(0, 0, 0, 0.7);
@@ -77,7 +80,6 @@
             position: relative;
             box-shadow: var(--sombra);
             text-align: left;
-            min-width: 0; /* Garante que o texto não force a largura */
         }
         
         .anime-button::before {
@@ -182,8 +184,14 @@
         /* Versão para tablets */
         @media (min-width: 600px) {
             .buttons-grid {
+                display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 gap: 15px;
+                align-items: stretch;
+            }
+            
+            .anime-button {
+                width: 100%; /* Ocupa toda a largura do grid */
             }
             
             header {
@@ -214,13 +222,119 @@
     
     <div class="container">
         <div class="buttons-grid">
-            <!-- Todos os botões aqui (mantidos do código anterior) -->
+            <!-- Botões existentes -->
             <button class="anime-button naruto" onclick="window.location.href='https://otakucitybr.github.io/Naruto/'">
                 <span>Naruto</span>
             </button>
             
-            <!-- ... outros botões ... -->
+            <button class="anime-button dragon-ball" onclick="window.location.href='https://otakucitybr.github.io/Dragon_Ball/'">
+                <span>Dragon Ball</span>
+            </button>
             
+            <button class="anime-button one-piece" onclick="window.location.href='https://otakucitybr.github.io/One_Piece/'">
+                <span>One Piece</span>
+            </button>
+            
+            <button class="anime-button attack-on-titan" onclick="window.location.href='https://otakucitybr.github.io/aot/'">
+                <span>Attack on Titan</span>
+            </button>
+            
+            <button class="anime-button my-hero-academia" onclick="window.location.href='https://otakucitybr.github.io/BnH/'">
+                <span>My Hero Academia</span>
+            </button>
+            
+            <button class="anime-button demon-slayer" onclick="window.location.href='https://otakucitybr.github.io/kny/'">
+                <span>Demon Slayer</span>
+            </button>
+            
+            <!-- Novos botões -->
+            <button class="anime-button arcane" onclick="window.location.href='https://otakucitybr.github.io/ar/'">
+                <span>Arcane</span>
+            </button>
+            
+            <button class="anime-button berserk" onclick="window.location.href='https://otakucitybr.github.io/berserk/'">
+                <span>Berserk</span>
+            </button>
+            
+            <button class="anime-button bleach" onclick="window.location.href='https://otakucitybr.github.io/bleach/'">
+                <span>Bleach</span>
+            </button>
+            
+            <button class="anime-button cavaleiros-zodiaco" onclick="window.location.href='https://otakucitybr.github.io/CDZ/'">
+                <span>Cavaleiros do Zodíaco</span>
+            </button>
+            
+            <button class="anime-button chainsaw-man" onclick="window.location.href='https://otakucitybr.github.io/CSM/'">
+                <span>ChainSaw Man</span>
+            </button>
+            
+            <button class="anime-button evangelion" onclick="window.location.href='https://otakucitybr.github.io/Evan/'">
+                <span>Evangelion</span>
+            </button>
+            
+            <button class="anime-button genshin-impact" onclick="window.location.href='https://otakucitybr.github.io/GenshinImpact/'">
+                <span>Genshin Impact</span>
+            </button>
+            
+            <button class="anime-button ghibli" onclick="window.location.href='https://otakucitybr.github.io/Ghibli/'">
+                <span>Studio Ghibli</span>
+            </button>
+            
+            <button class="anime-button haikyuu" onclick="window.location.href='https://otakucitybr.github.io/Haikyu/'">
+                <span>Haikyuu</span>
+            </button>
+            
+            <button class="anime-button hanako" onclick="window.location.href='https://otakucitybr.github.io/Hanako/'">
+                <span>Hanako</span>
+            </button>
+            
+            <button class="anime-button hello-kitty" onclick="window.location.href='https://otakucitybr.github.io/HelloKitty/'">
+                <span>Hello Kitty</span>
+            </button>
+            
+            <button class="anime-button hunter-x-hunter" onclick="window.location.href='https://otakucitybr.github.io/HxH/'">
+                <span>Hunter x Hunter</span>
+            </button>
+            
+            <button class="anime-button jujutsu-kaisen" onclick="window.location.href='https://otakucitybr.github.io/Jujutsu/'">
+                <span>Jujutsu Kaisen</span>
+            </button>
+            
+            <button class="anime-button fullmetal" onclick="window.location.href='https://otakucitybr.github.io/Full/'">
+                <span>Fullmetal Alchemist</span>
+            </button>
+            
+            <button class="anime-button nanatsu-no-taizai" onclick="window.location.href='https://otakucitybr.github.io/Nanatsu/'">
+                <span>Nanatsu No Taizai</span>
+            </button>
+            
+            <button class="anime-button one-punch-man" onclick="window.location.href='https://otakucitybr.github.io/One/'">
+                <span>One Punch Man</span>
+            </button>
+            
+            <button class="anime-button pokemon" onclick="window.location.href='https://otakucitybr.github.io/Pokemon/'">
+                <span>Pokémon</span>
+            </button>
+            
+            <button class="anime-button procurados-one-piece" onclick="window.location.href='https://otakucitybr.github.io/Wanted/'">
+                <span>Procurados One Piece</span>
+            </button>
+            
+            <button class="anime-button sailor-moon" onclick="window.location.href='https://otakucitybr.github.io/Sailor/'">
+                <span>Sailor Moon</span>
+            </button>
+            
+            <button class="anime-button solo-leveling" onclick="window.location.href='https://otakucitybr.github.io/Solo/'">
+                <span>Solo Leveling</span>
+            </button>
+            
+            <button class="anime-button spy-x-family" onclick="window.location.href='https://otakucitybr.github.io/Spy/'">
+                <span>Spy x Family</span>
+            </button>
+            
+            <button class="anime-button tokyo-revengers" onclick="window.location.href='https://otakucitybr.github.io/Revengers/'">
+                <span>Tokyo Revengers</span>
+            </button>
         </div>
     </div>
     
