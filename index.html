@@ -3,12 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Otaku City - Decoração Anime - Encontre os melhores wallpapers e temas de anime">
-    <meta name="keywords" content="anime, wallpapers, naruto, one piece, dragon ball, decoração anime">
     <title>Otaku City - Decoração Anime</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         :root {
@@ -27,7 +22,7 @@
         }
         
         body {
-            font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
             background: var(--cor-fundo);
@@ -37,7 +32,7 @@
             flex-direction: column;
         }
         
-        /* Header redesenhado */
+        /* Header */
         header {
             text-align: center;
             padding: 40px 20px;
@@ -78,19 +73,12 @@
         h1 {
             margin: 0;
             font-size: clamp(2.5rem, 6vw, 4rem);
-            font-weight: 900;
+            font-weight: 800;
             letter-spacing: 3px;
             text-transform: uppercase;
             color: var(--cor-primaria);
             text-shadow: 0 0 15px rgba(230, 57, 70, 0.9);
-            opacity: 1;
-            transition: all 0.5s ease;
             z-index: 1;
-        }
-        
-        h1:hover {
-            text-shadow: 0 0 20px rgba(230, 57, 70, 1);
-            transform: scale(1.02);
         }
         
         .slogan {
@@ -117,14 +105,14 @@
             margin-bottom: 30px;
         }
         
-        /* Botões redesenhados */
+        /* Botões corrigidos */
         .anime-button {
             display: flex;
             align-items: center;
             width: 100%;
             height: 70px;
             padding: 0 20px;
-            background: rgba(0, 0, 0, 0.7);
+            background-color: rgba(0, 0, 0, 0.7);
             border-radius: 10px;
             border: none;
             color: white;
@@ -168,44 +156,44 @@
             transform: translateY(2px);
         }
         
-        /* Estilos das imagens de fundo com pré-carregamento */
+        /* CORREÇÃO PRINCIPAL: Imagens de fundo */
         .anime-button {
             background-size: cover;
-            background-position: center;
+            background-position: right center;
             background-repeat: no-repeat;
         }
         
-        /* Classes para cada anime */
-        .anime-button.naruto { background-image: url('https://i.ibb.co/zVp9pbqR/naruto.jpg'); }
-        .anime-button.dragon-ball { background-image: url('https://i.ibb.co/pvwYVMqT/d.jpg'); }
-        .anime-button.one-piece { background-image: url('https://i.ibb.co/hJpTMCG5/o.jpg'); }
-        .anime-button.attack-on-titan { background-image: url('https://i.ibb.co/pj444tVv/a.jpg'); }
-        .anime-button.my-hero-academia { background-image: url('https://i.ibb.co/jkW0s02B/b.jpg'); }
-        .anime-button.demon-slayer { background-image: url('https://i.ibb.co/SDdzYmXZ/ds.jpg'); }
-        .anime-button.arcane { background-image: url('https://i.ibb.co/JwymXkv8/arcane-capa.png'); }
-        .anime-button.berserk { background-image: url('https://i.ibb.co/3yGzvsvx/ber.png'); }
-        .anime-button.bleach { background-image: url('https://i.ibb.co/HTVq4VHQ/bleach.png'); }
-        .anime-button.cavaleiros-zodiaco { background-image: url('https://i.ibb.co/39V1Xv6r/cdz.png'); }
-        .anime-button.chainsaw-man { background-image: url('https://i.ibb.co/Q3PYtDgt/csm.png'); }
-        .anime-button.evangelion { background-image: url('https://i.ibb.co/HjMwggJ/evan.png'); }
-        .anime-button.genshin-impact { background-image: url('https://i.ibb.co/sJ2RnJcw/genshin.png'); }
-        .anime-button.ghibli { background-image: url('https://i.ibb.co/qM7m81qL/gibli.png'); }
-        .anime-button.haikyuu { background-image: url('https://i.ibb.co/WvBz48th/haiki.png'); }
-        .anime-button.hanako { background-image: url('https://i.ibb.co/VYYCpthJ/hanako.png'); }
-        .anime-button.hello-kitty { background-image: url('https://i.ibb.co/Qv36pgjr/hello.png'); }
-        .anime-button.hunter-x-hunter { background-image: url('https://i.ibb.co/60gnM0Y1/hunter.png'); }
-        .anime-button.jujutsu-kaisen { background-image: url('https://i.ibb.co/4ZvZTjnV/jujutso.png'); }
-        .anime-button.fullmetal { background-image: url('https://i.ibb.co/dd0Pr3q/full.png'); }
-        .anime-button.nanatsu-no-taizai { background-image: url('https://i.ibb.co/m5yQvqSp/nanatsu.png'); }
-        .anime-button.one-punch-man { background-image: url('https://i.ibb.co/tPcgHCGy/onepunch.png'); }
-        .anime-button.pokemon { background-image: url('https://i.ibb.co/LhB8FjKS/pokemon.png'); }
-        .anime-button.procurados-one-piece { background-image: url('https://i.ibb.co/KzwQvymD/wanted.png'); }
-        .anime-button.sailor-moon { background-image: url('https://i.ibb.co/FbBt1vS4/sailor.png'); }
-        .anime-button.solo-leveling { background-image: url('https://i.ibb.co/mrndg3FQ/solo.png'); }
-        .anime-button.spy-x-family { background-image: url('https://i.ibb.co/gMfhTWX1/spy.png'); }
-        .anime-button.tokyo-revengers { background-image: url('https://i.ibb.co/N2TSCC3P/tokyo.png'); }
+        /* Classes específicas para cada anime - CORRIGIDAS */
+        .naruto { background-image: url('https://i.ibb.co/zVp9pbqR/naruto.jpg') !important; }
+        .dragon-ball { background-image: url('https://i.ibb.co/pvwYVMqT/d.jpg') !important; }
+        .one-piece { background-image: url('https://i.ibb.co/hJpTMCG5/o.jpg') !important; }
+        .attack-on-titan { background-image: url('https://i.ibb.co/pj444tVv/a.jpg') !important; }
+        .my-hero-academia { background-image: url('https://i.ibb.co/jkW0s02B/b.jpg') !important; }
+        .demon-slayer { background-image: url('https://i.ibb.co/SDdzYmXZ/ds.jpg') !important; }
+        .arcane { background-image: url('https://i.ibb.co/JwymXkv8/arcane-capa.png') !important; }
+        .berserk { background-image: url('https://i.ibb.co/3yGzvsvx/ber.png') !important; }
+        .bleach { background-image: url('https://i.ibb.co/HTVq4VHQ/bleach.png') !important; }
+        .cavaleiros-zodiaco { background-image: url('https://i.ibb.co/39V1Xv6r/cdz.png') !important; }
+        .chainsaw-man { background-image: url('https://i.ibb.co/Q3PYtDgt/csm.png') !important; }
+        .evangelion { background-image: url('https://i.ibb.co/HjMwggJ/evan.png') !important; }
+        .genshin-impact { background-image: url('https://i.ibb.co/sJ2RnJcw/genshin.png') !important; }
+        .ghibli { background-image: url('https://i.ibb.co/qM7m81qL/gibli.png') !important; }
+        .haikyuu { background-image: url('https://i.ibb.co/WvBz48th/haiki.png') !important; }
+        .hanako { background-image: url('https://i.ibb.co/VYYCpthJ/hanako.png') !important; }
+        .hello-kitty { background-image: url('https://i.ibb.co/Qv36pgjr/hello.png') !important; }
+        .hunter-x-hunter { background-image: url('https://i.ibb.co/60gnM0Y1/hunter.png') !important; }
+        .jujutsu-kaisen { background-image: url('https://i.ibb.co/4ZvZTjnV/jujutso.png') !important; }
+        .fullmetal { background-image: url('https://i.ibb.co/dd0Pr3q/full.png') !important; }
+        .nanatsu-no-taizai { background-image: url('https://i.ibb.co/m5yQvqSp/nanatsu.png') !important; }
+        .one-punch-man { background-image: url('https://i.ibb.co/tPcgHCGy/onepunch.png') !important; }
+        .pokemon { background-image: url('https://i.ibb.co/LhB8FjKS/pokemon.png') !important; }
+        .procurados-one-piece { background-image: url('https://i.ibb.co/KzwQvymD/wanted.png') !important; }
+        .sailor-moon { background-image: url('https://i.ibb.co/FbBt1vS4/sailor.png') !important; }
+        .solo-leveling { background-image: url('https://i.ibb.co/mrndg3FQ/solo.png') !important; }
+        .spy-x-family { background-image: url('https://i.ibb.co/gMfhTWX1/spy.png') !important; }
+        .tokyo-revengers { background-image: url('https://i.ibb.co/N2TSCC3P/tokyo.png') !important; }
         
-        /* Botão flutuante redesenhado */
+        /* Botão flutuante */
         .social-float {
             position: fixed;
             bottom: 20px;
@@ -236,29 +224,6 @@
             background: rgba(0, 0, 0, 0.7);
             font-size: 0.9em;
             margin-top: auto;
-        }
-        
-        /* Efeito de loading para imagens */
-        .loading {
-            position: relative;
-            overflow: hidden;
-            background-color: #2a2a3a;
-        }
-        
-        .loading::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
-            animation: loading 1.5s infinite;
-        }
-        
-        @keyframes loading {
-            0% { transform: translateX(-100%); }
-            100% { transform: translateX(100%); }
         }
         
         /* Responsividade */
@@ -409,31 +374,5 @@
     <footer>
         <p>© 2025 Otaku City • Contato: (11) 9 5858-8616 • contato@otakucity.com.br</p>
     </footer>
-
-    <script>
-        // Pré-carregamento de imagens para melhor performance
-        document.addEventListener('DOMContentLoaded', function() {
-            const buttons = document.querySelectorAll('.anime-button');
-            
-            buttons.forEach(button => {
-                // Adiciona classe de loading temporariamente
-                button.classList.add('loading');
-                
-                // Cria uma imagem oculta para forçar o cache
-                const img = new Image();
-                img.src = button.style.backgroundImage.replace(/url\(['"]?(.*?)['"]?\)/, '$1');
-                
-                img.onload = function() {
-                    button.classList.remove('loading');
-                };
-                
-                img.onerror = function() {
-                    button.classList.remove('loading');
-                    button.style.backgroundImage = 'none';
-                    button.style.backgroundColor = '#333';
-                };
-            });
-        });
-    </script>
 </body>
 </html>
